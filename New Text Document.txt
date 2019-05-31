@@ -1,0 +1,1 @@
+select dept_cd,(select dept_desc from dept_mas where dept_cd=emp_mas.dept_cd) as dept_name from emp_mas  group by dept_cd
